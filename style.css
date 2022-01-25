@@ -5,10 +5,22 @@
 }
 
 .mr-5 {
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 .nav-link {
   font-size: 14pt;
   color: #748bad;
+}
+
+.dropdown-menu {
+  min-width: max-content;
+  border: none;
+  background: #f8f9fa;
+}
+
+.navbar-brand {
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
 }

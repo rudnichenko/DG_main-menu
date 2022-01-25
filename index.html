@@ -14,52 +14,77 @@
   <title>DG Main menu</title>
 </head>
 <body>
-  <div class="navbar fixed-top navbar-light bg-light">
-    <ul class="nav justify-content-center">
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">
-          <i class="bi bi-building mr-5"></i>О компании
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="fas fa-project-diagram mr-5"></i>Структура
-        </a>
-      </li>
+  <div class="navbar fixed-top navbar-light bg-light justify-content-center">
+    <ul class="nav">
       <li class="nav-item">
         <a class="nav-link" href="#">
           <i class="far fa-newspaper mr-5"></i>Статьи
         </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="far fa-address-book mr-5"></i>Сотрудники
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+          <i class="bi bi-building mr-5"></i>Компания
         </a>
+		    <ul class="dropdown-menu">
+          <li>
+            <a class="nav-link" href="#">
+              <i class="bi bi-building mr-5"></i>О компании
+            </a>
+          </li>
+          <li>
+            <a class="nav-link" href="#">
+              <i class="fas fa-project-diagram mr-5"></i>Структура
+            </a>
+          </li>
+		    </ul>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="navbar-brand" href="#">
+          <img src="http://dgfinance.com.ua/i/logo.png" alt="DG finance logo" height="32">
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+          <i class="far fa-address-book mr-5"></i>Кадры
+        </a>
+        <ul class="dropdown-menu show">
+          <li>
+            <a class="nav-link" href="#">
+              <i class="far fa-address-book mr-5"></i>Сотрудники
+            </a>
+          </li>
+          <li>
+            <a class="nav-link" href="#">
+              <i class="fab fa-hotjar mr-5"></i>Лучшие сотрудники
+            </a>
+          </li>
+          <li>
+            <a class="nav-link" href="#">
+              <i class="fas fa-birthday-cake mr-5"></i>Дни рождения
+            </a>
+          </li>
+          <li>
+            <a class="nav-link" href="#">
+              <i class="bi bi-people-fill mr-5"></i>Подрядчики
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
           <i class="fas fa-book mr-5"></i>Библиотека
         </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="fas fa-birthday-cake mr-5"></i>Дни рождения
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="fab fa-hotjar mr-5"></i>Лучшие сотрудники
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="bi bi-people-fill mr-5"></i>Подрядчики
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="far fa-file-alt mr-5"></i>Шаблоны документов
-        </a>
+        <ul class="dropdown-menu">
+          <li>
+            <a class="nav-link" href="#">
+              <i class="fas fa-book mr-5"></i>Библиотека
+            </a>
+          </li>
+          <li>
+            <a class="nav-link" href="#">
+              <i class="far fa-file-alt mr-5"></i>Шаблоны документов
+            </a>
+          </li>
       </li>
     </ul>
   </div>
@@ -67,7 +92,7 @@
   <!-- Optional JavaScript; choose one of the two! -->
   <!-- Option 1: Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  
+  <script src="main.js"></script>
   <!-- Option 2: Separate Popper and Bootstrap JS -->
   <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
